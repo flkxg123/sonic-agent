@@ -1,7 +1,6 @@
 package org.cloud.sonic.agent.tools;
 
 import com.alibaba.fastjson.JSONObject;
-import com.fazecast.jSerialComm.SerialPort;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,7 +14,7 @@ import static org.cloud.sonic.agent.tools.BytesTool.subByteArray;
 
 public class testSer {
     public static void main(String[] args) throws IOException {
-        Socket test = new Socket("localhost", 5001);
+        Socket test = new Socket("localhost", 5002);
         InputStream inputStream = test.getInputStream();
         OutputStream outputStream = test.getOutputStream();
         JSONObject jsonObject = new JSONObject();
